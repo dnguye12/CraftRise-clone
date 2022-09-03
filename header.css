@@ -1,0 +1,76 @@
+
+
+header {
+    background-color: #e2621b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    padding: 30px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+header #logo {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+header ul {
+    flex: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header ul li {
+    height: 57px;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #e2621b 3px solid;
+    margin: 30px;
+    transition: border 250ms;
+}
+
+header ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header ul li:hover {
+    border-bottom: white 3px solid;
+}
+
+header #login {
+    margin: 30px;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+}
+
+header #play {
+    height: 40px;
+    width: 150px;
+    background-color: #ffc107;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 350ms;
+}
+
+header #play:hover {
+    background-color: #f79234;
+}
