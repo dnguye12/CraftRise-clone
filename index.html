@@ -14,7 +14,38 @@
 </head>
 
 <body>
-    <header>
+    <ul id="menu-mobile-dropdown">
+        <li><img id="logo" src="images/logo.svg" alt="logo"></li>
+        <li>GAMES</li>
+        <li>SHOP</li>
+        <li>SUPPORT</li>
+        <li>RULES</li>
+        <li>STATISTICS</li>
+        <li>LOG IN</li>
+        <li class="playBtn">PLAY</li>
+    </ul>
+
+    
+    <div id="playSection">
+        <h1>DOWNLOAD CRAFTRISE</h1>
+        <div id="container">
+            <div>
+                <img src="images/windows.svg" alt="windows">
+                <p>WINDOWS</p>
+            </div>
+            <div>
+                <img src="images/macos.svg" alt="macos">
+                <p>MAC OS</p>
+            </div>
+            <div>
+                <img src="images/linux.svg" alt="linux">
+                <p>LINUX/DEBIAN</p>
+            </div>
+        </div>
+        <a href="" target="_blank">I am not registered</a>
+    </div>
+    <div id="playOverlay"></div>
+    <header id="header-desktop">
         <img src="images/logo.svg" alt="logo" id="logo">
         <ul>
             <li><a href="" target="_blank">GAMES</a></li>
@@ -24,8 +55,12 @@
             <li><a href="" target="_blank">STATISTICS</a></li>
         </ul>
         <img src="images/giris.svg" alt="login" id="login">
-        <button type="button" id="play">PLAY</button>
+        <button type="button" id="play" class="playBtn">PLAY</button>
     </header>
+    <header id="header-mobile">
+        <img src="images/menu-bar.png" alt="menu" id="menu-bar">
+    </header>
+
 
     <div id="video-container">
         <video preload="true" autoplay loop muted>
@@ -35,7 +70,7 @@
         <div id="content">
             <h1>CRAFTRISE</h1>
             <h3>Welcome to the world of entertainment!</h3>
-            <button type="button">PLAY</button>
+            <button type="button" class="playBtn">PLAY</button>
         </div>
     </div>
     <main>
@@ -98,7 +133,7 @@
                     updates and innovative gaming experience, it expands its game network day by day.</p>
             </div>
             <div id="footer-1-button-container">
-                <button type="button">PLAY</button>
+                <button type="button" class="playBtn">PLAY</button>
             </div>
             <div id="links">
                 <h3>Fast access</h3>
