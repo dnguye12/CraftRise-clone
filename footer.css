@@ -75,3 +75,54 @@
 #footer-2 a{
     margin-right: 10px;
 }
+
+#footer-2 a:hover img {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(1px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
+
+@media only screen and (max-width: 960px) {
+    #footer-1 {
+        flex-direction: column;
+    }
+
+    #footer-1 button {
+        width: 100%;
+        height: 60px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    
+    #footer-1 #links h3 {
+        margin-left: 0px;
+    }
+
+    #footer-1 #links ul {
+        margin-left: -22px;
+        margin-right: -22px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #footer-2 {
+        flex-direction: column;
+    }
+    #footer-2 #socials {
+        margin-bottom: 15px;
+    }
+}
